@@ -1,2 +1,53 @@
-<p>registration works</p>
-<p>registration works again!</p>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>User Registraion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div ng-app="myApp" class="container" style="width:550px">
+    <div style="text-align:center;">
+      <h3><b>User Registraion</b></h3>
+    </div>
+    <div ng-controller="RegisterController">
+      <form role="form" class="well" ng-hide="ifSearchUser">
+        <div class="form-group">
+          <label for="name"> Name: </label>
+          <input type="text" id="name" class="form-control" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <label for="email"> Email: </label>
+          <input type="email" id="email" class="form-control" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+          <label for="phone"> Phone: </label>
+          <input type="text" id="phone" class="form-control" placeholder="Enter Phone">
+        </div>
+        <div class="form-group">
+          <label for="date"> Date of Birth: </label>
+          <input type="date" id="date" class="form-control" placeholder="Enter Date of Birth">
+        </div>
+        <div class="form-group">
+          <label for="password"> Password: </label>
+          <input type="password" id="password" class="form-control" placeholder="Enter Password">
+        </div>
+        <div class="form-group">
+          <label for="confirmpassword"> Re-Password: </label>
+          <input type="password" id="confirmpassword" class="form-control" placeholder="Enter Password">
+        </div>
+        <br>
+        <input type="hidden">
+        <input type="button" class="btn btn-primary" class="btn btn-primary" value="Sign Up">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
