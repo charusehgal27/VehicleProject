@@ -1,28 +1,33 @@
-
 <!DOCTYPE html>
 <html>
+
 <body>
-		<h1>EMI calculator</h1><hr>
+    <h1>EMI calculator</h1>
+    <hr>
 
 
-		
-		   
-			<TABLE BORDER=2 CELLSPACING=10 CELLPADDING=10  style="background-color:white;">
-				<label>Vehicle Loan Amount </label><input type="number" name="loan" [(ngModel)]="loan" (change)="calculateEMI()">Rs.<br>
-                <label>Rate of interest </label><input type="number" name="rate" [(ngModel)]="rate" (change)="calculateEMI()">%<br>
-	            <label>Loan Tenure  </label><input type="number" name="years" [(ngModel)]="years" (change)="calculateEMI()"><br>
-	            <hr>	
 
 
-                
-				
-				
-				<TR> <TD colspan="2" align="center"><button (click)="calculateEMI()">Calculate EMI</button><br></TD> </TR>
-			
-				principal amount : xxxxx
-			</TABLE>
-	
-		
+    <TABLE BORDER=2 CELLSPACING=10 CELLPADDING=10 style="background-color:white;">
+        <label>Vehicle Loan Amount </label><input type="number" name="loan" [(ngModel)]="loan"
+            (change)="calculateEMI()">Rs.<br>
+        <label>Rate of interest </label><input type="number" name="rate" [(ngModel)]="rate"
+            (change)="calculateEMI()">%<br>
+        <label>Loan Tenure </label><input type="number" name="years" [(ngModel)]="years" (change)="calculateEMI()"><br>
+        <hr>
+
+
+
+
+
+        <TR>
+            <TD colspan="2" align="center"><button (click)="calculateEMI()">Calculate EMI</button><br></TD>
+        </TR>
+
+        principal amount : xxxxx
+    </TABLE>
+
+
 </body>
 
 </html>
