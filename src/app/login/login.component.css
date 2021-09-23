@@ -1,0 +1,49 @@
+@charset "ISO-8859-1";
+body{
+	   
+        text-align: center;
+        background-image: url('src/assets/loginn.jpg');
+        width:auto;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         margin:auto;
+         max-width: max-content;
+        
+        
+}
+table{
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px; 
+        background-image: url('src/assets/login.jpg'); 
+        background: linear-gradient(to bottom, #222726a2 0%, #f5f6f89a 100%);
+        border-radius: 15px ;  
+          
+}  
+h1{  
+    text-align: center;  
+    color: #277582;  
+    padding: 20px;
+    background-color: aliceblue;  
+}
+h2{  
+    text-align: center;  
+    color: #277582;  
+    padding: 20px;  
+    background-color: aliceblue;
+}  
+input{
+        background-color:silver;
+        color: black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+  input:hover {
+        opacity: 0.8;
+    }
