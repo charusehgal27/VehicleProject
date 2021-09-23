@@ -12,6 +12,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { EmiCalculatorComponent } from './emi-calculator/emi-calculator.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
     UserLoginComponent,
     UserDashboardComponent,
     AdminLoginComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    EmiCalculatorComponent
   ],
   imports: [
     BrowserModule,
