@@ -13,6 +13,10 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { EmiCalculatorComponent } from './emi-calculator/emi-calculator.component';
+import { EmploymentapplicationComponent } from './employmentapplication/employmentapplication.component';
+import { VehicleapplicationnComponent } from './vehicleapplicationn/vehicleapplicationn.component';
+import { LoandetailapplicationnComponent } from './loandetailapplicationn/loandetailapplicationn.component';
+import { DocumentapplicationComponent } from './documentapplication/documentapplication.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +27,11 @@ import { EmiCalculatorComponent } from './emi-calculator/emi-calculator.componen
     UserDashboardComponent,
     AdminLoginComponent,
     AdminDashboardComponent,
-    EmiCalculatorComponent
+    EmiCalculatorComponent,
+    EmploymentapplicationComponent,
+    VehicleapplicationnComponent,
+    LoandetailapplicationnComponent,
+    DocumentapplicationComponent
   ],
   imports: [
     BrowserModule,

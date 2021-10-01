@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>User Registraion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="employmentapplication.component.css">
+</head>
+
+<body>
+    <div class="container" style="width:550px">
+        <div style="text-align:center;">
+          <h2 style="margin-bottom: 40px;" ><b>Employment Details</b></h2>
+        </div>
+          <form role="form" class="well">
+            <div class="form-group">
+              <label for="name"> Types of Employment </label>
+              <input type="text" name="insertaEmployment.empType" [(ngModel)]="insertaEmployment.empType" id="name" class="form-control" placeholder="Types of Employment">
+            </div>
+            <div class="form-group">
+              <label for="Annual"> Annual Salary </label>
+              <input type="number" id="number" name="insertaEmployment.annualSalary" [(ngModel)]="insertaEmployment.annualSalary" class="form-control" placeholder="Enter Annual Salary">
+            </div>
+            <div class="form-group">
+              <label for="Existing"> Existing EMI: </label>
+              <input type="number" id="number" name="insertaEmployment.existingEmi" [(ngModel)]="insertaEmployment.existingEmi" class="form-control" placeholder="Existing EMI">
+            </div>
+            <input type="hidden">
+            <button (click) = "insertEmployment()" type="button" class="btn btn-primary" class="btn btn-primary" value="Submit">Submit</button>
+            <button type="button" class="btn btn-primary" class="btn btn-primary" value="Next">Next</button>
+          </form>
+        </div>
+    </body>
+</html>

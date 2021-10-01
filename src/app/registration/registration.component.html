@@ -13,12 +13,11 @@
 </head>
 
 <body>
-  <div ng-app="myApp" class="container" style="width:550px">
+  <div class="container" style="width:550px">
     <div style="text-align:center;">
       <h2 style="margin-bottom: 40px;" ><b>User Registraion</b></h2>
     </div>
-    <div ng-controller="RegisterController">
-      <form role="form" class="well" ng-hide="ifSearchUser">
+      <form role="form" class="well">
         <div class="form-group">
           <label for="name"> Name: </label>
           <input type="text" id="name" class="form-control" placeholder="Enter Name">
@@ -48,7 +47,6 @@
         <input type="button" class="btn btn-primary" class="btn btn-primary" value="Sign Up">
       </form>
     </div>
-  </div>
 </body>
 
 </html>

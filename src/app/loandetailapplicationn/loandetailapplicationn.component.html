@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>User Registraion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="loandetailapplicationn.component.css">
+</head>
+
+<body>
+    <div class="container" style="width:550px">
+        <div style="text-align:center;">
+          <h2 style="margin-bottom: 40px;" ><b>Loan Details</b></h2>
+        </div>
+          <form role="form" class="well">
+            <div class="form-group">
+              <label for="name"> Loan Amount</label>
+              <input type="text" name="insertaLoan.loanAmount" [(ngModel)]="insertaLoan.loanAmount" id="name" class="form-control" placeholder="Loan Amount">
+            </div>
+            <div class="form-group">
+              <label for="Annual"> Loan Tenure </label>
+              <input type="number" id="number" name="insertaLoan.loanTenure" [(ngModel)]="insertaLoan.loanTenure" class="form-control" placeholder="Loan Tenure">
+            </div>
+            <div class="form-group">
+              <label for="Existing">Rate of Interest </label>
+              <input type="number" id="number" name="insertaLoan.rateOfInterest" [(ngModel)]="insertaLoan.rateOfInterest" class="form-control" placeholder="Rate of Interest">
+            </div>
+            <input type="hidden">
+            <button (click) = "insertLoan()" type="button" class="btn btn-primary" class="btn btn-primary" value="Submit">Submit</button>
+            <button type="button" class="btn btn-primary" class="btn btn-primary" value="Next">Next</button>
+          </form>
+        </div>
+    </body>
+</html>
